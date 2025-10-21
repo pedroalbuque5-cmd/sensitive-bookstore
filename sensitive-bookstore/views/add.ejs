@@ -1,0 +1,10 @@
+<%- include('partials/header') %>
+<div class="container">
+  <h2>Adicionar Livro</h2>
+  <form method="POST" action="/add">
+    <input type="text" name="title" placeholder="Título" required><br><br>
+    <input type="text" name="author" placeholder="Autor" required><br><br>
+    <textarea name="description" placeholder="Descrição"></textarea><br><br>
+    <button type="submit">Salvar</button>
+  </form>
+</div>

@@ -1,0 +1,9 @@
+<header style="background-color:#9b59b6; color:white; padding:15px; text-align:center;">
+  <h1>Livraria Sensitive</h1>
+  <% if (typeof user !== 'undefined' && user) { %>
+
+    <p>Bem-vindo, <%= user.username %> |
+      <a href="/logout" style="color:white; text-decoration:underline;">Sair</a>
+    </p>
+  <% } %>
+</header>

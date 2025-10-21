@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/style.css">
+  <title>Login - Sensitive</title>
+</head>
+<body>
+<header><h1>Livraria Sensitive</h1></header>
+<div class="container">
+  <h2>Login</h2>
+  <% if (error) { %><p style="color:red"><%= error %></p><% } %>
+  <form method="POST" action="/login">
+    <input type="text" name="username" placeholder="Usuário" required><br><br>
+    <input type="password" name="password" placeholder="Senha" required><br><br>
+    <button type="submit">Entrar</button>
+  </form>
+</div>
+</body>
+</html>

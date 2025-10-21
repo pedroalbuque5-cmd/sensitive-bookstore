@@ -1,0 +1,9 @@
+<%- include('partials/header') %>
+<div class="container">
+  <h2>Livros disponíveis</h2>
+  <ul>
+    <% books.forEach(book => { %>
+      <li><b><%= book.title %></b> — <%= book.author %><br><i><%= book.description %></i></li>
+    <% }) %>
+  </ul>
+</div>

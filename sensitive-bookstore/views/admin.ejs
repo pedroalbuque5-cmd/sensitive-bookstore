@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+<div class="container">
+  <h2>Gerenciar Livros</h2>
+  <a href="/add"><button>Adicionar Livro</button></a>
+  <ul>
+    <% books.forEach(book => { %>
+      <li>
+        <b><%= book.title %></b> — <%= book.author %>
+        <a href="/edit/<%= book.id %>">✏️</a>
+        <a href="/delete/<%= book.id %>">🗑️</a>
+      </li>
+    <% }) %>
+  </ul>
+</div>
